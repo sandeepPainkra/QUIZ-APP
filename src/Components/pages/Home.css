@@ -1,0 +1,31 @@
+.home {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.q_settings {
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.banner {
+  width: 55%;
+}
+.home_image {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .header .title {
+    font-size: 3rem;
+  }
+  .home {
+    flex-direction: column-reverse;
+  }
+  .home_image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+.header {
+  text-align: center;
+}
+.header .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 7rem;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.header hr {
+  width: 100%;
+  border: 0;
+  background-color: darkgray;
+  height: 1px;
+}

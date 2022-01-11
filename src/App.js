@@ -1,11 +1,28 @@
 import React from "react";
 import "./App.css";
+import Header from "./Components/header/Header";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./Components/pages/Home";
+import Quiz from "./Components/pages/Quiz";
+import Result from "./Components/pages/Result";
+import Footer from "./Components/footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <h2>hey buddy whastsapp lets build a quiz app using react js</h2>
-    </div>
+    <>
+      <div className="app">
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/result" element={<Result />} />
+          </Routes>
+        </Router>
+      </div>
+      <Footer />
+    </>
   );
 }
 
